@@ -6,9 +6,11 @@ const main = ctx => {
         ctx.response.type = 'html'
         ctx.response.body = "<a href='/'>Index page</a>"
     } else {
-        ctx.response.body = 'hello koa demo5'
+        ctx.response.body = 'home'
     }
 }
 
 app.use(main)
 app.listen(3000)
+
+// 访问： http://127.0.0.1:3000/aaa

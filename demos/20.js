@@ -2,7 +2,7 @@ const Koa = require('koa')
 const koaBody = require('koa-body')
 const app = new Koa()
 
-const main = async ctx => {
+const main = ctx => {
     const body = ctx.request.body
     console.log(body)
     if (!body.name) ctx.throw(400, 'name required')

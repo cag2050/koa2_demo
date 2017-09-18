@@ -5,7 +5,7 @@ const Koa = require('koa')
 const koaBody = require('koa-body')
 const app = new Koa()
 
-const main = async ctx => {
+const main = ctx => {
     const tmpdir = os.tmpdir()
     const filePaths = []
     const files = ctx.request.body.files || {}
